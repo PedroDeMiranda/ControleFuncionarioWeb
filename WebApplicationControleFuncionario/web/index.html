@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Screen</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilos/estiloLogin.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card card-login">
+          <div class="card-body">
+            <h2 class="card-title text-center">Login</h2>
+            
+            <form action="autenticarUsuario.jsp">
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="email" name="email" class="form-control" placeholder="Digite seu username">
+              </div>
+              <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+              <a href="signup.html" class="btn btn-primary btn-block">SignUp</a>
+              <button type="reset" class="btn btn-primary btn-block">Cancela</button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
