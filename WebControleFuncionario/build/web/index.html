@@ -15,7 +15,7 @@
           <div class="card-body">
             <h2 class="card-title text-center">Login</h2>
             
-            <form action="autenticarUsuario.jsp">
+            <form action="autenticarUsuario.jsp" onsubmit="return validarCampos();">
               <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="email" name="email" class="form-control" placeholder="Digite seu username">
@@ -34,5 +34,17 @@
       </div>
     </div>
   </div>
+    <script>
+    function validarCampos() {
+        var email = document.getElementById("email").value;
+        var senha = document.getElementById("senha").value;
+
+        if (email === "" || senha === "") {
+            alert("Por favor, preencha todos os campos!");
+            return false;  // Impede o envio do formulário
+        }
+        return true;  // Permite o envio se tudo estiver ok
+    }
+</script>
 </body>
 </html>

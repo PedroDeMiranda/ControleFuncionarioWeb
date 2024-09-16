@@ -5,6 +5,150 @@
  *     Project: bootstrap-rtl
  *   Copyright: GPL
  *******************************************************************************/
+body, h1, h2, p, form, table, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #adb5bd !important;
+}
+
+/* Estilo da barra lateral */
+#sidebar-wrapper {
+    background-color: #343a40;
+    color: #ffffff;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar-nav {
+    padding: 1rem 0;
+}
+
+.sidebar-nav li {
+    padding: 0.5rem 1rem;
+}
+
+.sidebar-nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+    background-color: #495057;
+    border-radius: 4px;
+}
+
+/* Estilo do conteúdo da página */
+#page-content-wrapper {
+    margin-left: 250px;
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo dos formulários */
+form {
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+form input[type="submit"],
+form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo das tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+thead {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
 dd {
     margin-right: 0;
