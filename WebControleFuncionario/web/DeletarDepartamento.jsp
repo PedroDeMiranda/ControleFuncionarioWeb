@@ -18,13 +18,13 @@
 %>
 <script type="text/javascript">
     alert('departamento deletado');
-    window.location.href = 'menu.jsp'; // redireciona para a página de cadastro
+    window.location.href = 'telaExcluirDepartamento.html'; // redireciona para a página de cadastro
 </script>
 <%
 } else {
 %>
 <script type="text/javascript">
     alert('Erro ao deletar o departamento');
-    window.location.href = 'menu.jsp'; // redireciona para a página de cadastro
+    window.location.href = 'telaExcluirDepartamento.html'; // redireciona para a página de cadastro
 </script>
 <%}%>

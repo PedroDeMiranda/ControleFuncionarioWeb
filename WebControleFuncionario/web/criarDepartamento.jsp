@@ -13,17 +13,17 @@
     dep.setDescDepto(nome);
     //mando executar a criação do departamento
     if (dep.incluirDepartamento()){
-        response.sendRedirect("menu.jsp");
+        response.sendRedirect("telaCriarDepartamento.html");
 %>
 <script type="text/javascript">
     alert('departamento incluido');
-    window.location.href = 'menu.jsp';
+    window.location.href = 'telaCriarDepartamento.html';
 </script>
 <%
 } else {
 %>
 <script type="text/javascript">
     alert('Erro ao incluir o departamento');
-    window.location.href = 'menu.jsp';
+    window.location.href = 'telaCriarDepartamento.html';
 </script>
 <%}%>

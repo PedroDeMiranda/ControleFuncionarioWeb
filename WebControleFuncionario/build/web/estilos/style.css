@@ -31,6 +31,46 @@ header {
 .navbar-brand {
     font-weight: bold;
 }
+.content-container {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos gerais para o nav com ID navCRUD */
+#navCRUD {
+  list-style-type: none; /* Remove as bolinhas do <ul> */
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Cor de fundo da navbar */
+  overflow: hidden;
+}
+
+/* Estilos para os itens da nav */
+#navCRUD .nav-item {
+  float: left; /* Itens alinhados à esquerda */
+}
+
+#navCRUD .nav-link {
+  display: block;
+  color: white; /* Cor do texto */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilo quando o usuário passa o mouse por cima */
+#navCRUD .nav-link:hover {
+  background-color: #111; /* Fundo escurecido ao passar o mouse */
+}
+
+/* Estilo para o item ativo, se necessário */
+#navCRUD .nav-link.active {
+  background-color: #4CAF50; /* Cor de destaque para o item ativo */
+}
 
 .navbar-nav .nav-link {
     color: #ffffff !important;

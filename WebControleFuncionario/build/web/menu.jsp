@@ -39,7 +39,7 @@
         <ul class="sidebar-nav">
             <!-- <li class="sidebar-brand"> <a href="#"> Start Bootstrap </a> </li> -->
              <li> <a href="#">Dashboard</a> </li>
-            <li> <a href="DepartamentoTela/telaCriarDepartamento.html">Departamento</a> </li>
+            <li> <a href="telaCriarDepartamento.html">Departamento</a> </li>
             <li> <a href="#">Sobre</a> </li>
             <li> <a href="#">Serviços</a> </li>
             <li> <a href="#">Contato</a> </li>
@@ -51,48 +51,7 @@
         <div class="container-fluid">
           
             
-             <h2>Cadastrar Departamento</h2>
-    <form action="criarDepartamento.jsp" >
-        <label for="nomeDepartamento">Nome do Departamento:</label>
-        <input type="text" id="nomeDepartamento" name="nomeDepartamento" required>
-
-        <input type="submit" value="Cadastrar">
-    </form>
-
-    <h2>Alterar Departamento</h2>
-    <form action="AlterarDepartamento.jsp" method="post">
-        <label for="idAlterar">ID do Departamento:</label>
-        <input type="number" id="idAlterar" name="idAlterar" required>
-
-        <label for="nomeNovoDepartamento">Novo Nome do Departamento:</label>
-        <input type="text" id="nomeNovoDepartamento" name="nomeNovoDepartamento" required>
-
-        <input type="submit" value="Alterar">
-    </form>
-
-    <h2>Excluir Departamento</h2>
-    <form action="DeletarDepartamento.jsp">
-        <label for="idExcluir">ID do Departamento:</label>
-        <input type="number" id="idExcluir" name="idExcluir" required>
-
-        <button type="submit">Excluir</button>
-    </form>
-    
-    
-     <h2>Consultar Departamento</h2>
-     <form action="consultarDepartamento.jsp">
-        <label for="idConsulta">Consultar por ID:</label>
-        <input type="number" id="idConsulta" name="idConsulta" placeholder="Digite o ID do Departamento">
-
-        <input type="submit" value="Consultar">
-    </form>
-
-    <!-- Formulário para listar todos os departamentos -->
-    <h2>Listar Todos os Departamentos</h2>
-    <form action="listarDepartamento.jsp">
-        <input type="submit" value="Listar">
-    </form>
-            
+             
         </div>
     </div> <!-- /#page-content-wrapper -->
 </div> <!-- /#wrapper -->

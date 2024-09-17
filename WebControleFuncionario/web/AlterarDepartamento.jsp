@@ -20,13 +20,13 @@
 %>
 <script type="text/javascript">
     alert('departamento alterado');
-    window.location.href = 'menu.jsp'; // redireciona para a página de cadastro
+    window.location.href = 'telaAlterarDepartamento.html'; // redireciona para a página de cadastro
 </script>
 <%
 } else {
 %>
 <script type="text/javascript">
     alert('Erro ao alterar o departamento');
-    window.location.href = 'menu.jsp'; // redireciona para a página de cadastro
+    window.location.href = 'telaAlterarDepartamento.html'; // redireciona para a página de cadastro
 </script>
 <%}%>
