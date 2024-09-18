@@ -18,9 +18,9 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Bootstrap 4 sidebad collapsable sidebar responsive menu</title>
+  <title>Ler Departamento</title>
   <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="../estilos/style.css">
   
 </head>
 <body>

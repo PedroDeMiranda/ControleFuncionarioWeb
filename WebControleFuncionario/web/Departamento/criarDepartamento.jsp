@@ -13,7 +13,7 @@
     dep.setDescDepto(nome);
     //mando executar a criação do departamento
     if (dep.incluirDepartamento()){
-        response.sendRedirect("telaCriarDepartamento.html");
+        
 %>
 <script type="text/javascript">
     alert('departamento incluido');

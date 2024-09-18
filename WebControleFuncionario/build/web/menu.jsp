@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Bootstrap 4 sidebad collapsable sidebar responsive menu</title>
+  <title>Menu de Controle de Funcionários</title>
   <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
   <link rel="stylesheet" href="estilos/style.css">
  
@@ -39,7 +39,8 @@
         <ul class="sidebar-nav">
             <!-- <li class="sidebar-brand"> <a href="#"> Start Bootstrap </a> </li> -->
              <li> <a href="#">Dashboard</a> </li>
-            <li> <a href="telaCriarDepartamento.html">Departamento</a> </li>
+            <li> <a href="Departamento/telaLerDepartamento.html">Departamento</a> </li>
+            <li> <a href="Funcionario/telaLerFuncionario.html">Funcionários</a></li>
             <li> <a href="#">Sobre</a> </li>
             <li> <a href="#">Serviços</a> </li>
             <li> <a href="#">Contato</a> </li>
@@ -48,13 +49,25 @@
     </div> <!-- /#sidebar-wrapper -->
     <!-- Page Content -->
     <div id="page-content-wrapper">
-        <div class="container-fluid">
+        
           
+            <h2 class="mt-4">Sistema de Controle de Funcionários</h2>
+            <p>Utilize o menu ao lado para gerenciar departamentos, funcionários e acessar outras funcionalidades do sistema.</p>
             
-             
-        </div>
-    </div> <!-- /#page-content-wrapper -->
-</div> <!-- /#wrapper -->
+            <!-- Exemplo de conteúdo adicional -->
+            
+                    <br>
+                    <h4>Departamentos</h4>
+                    <p>Gerencie os departamentos da empresa.</p>
+                    <a href="Departamento/telaLerDepartamento.html" class="btn btn-primary">Veja os Departamentos</a>
+                    <br>
+                    <hr>
+                    <br>
+                    <h4>Funcionários</h4>
+                    <p>Visualize e edite informações dos funcionários.</p>
+                    <a href="Funcionario/telaLerFuncionario.html" class="btn btn-secondary">Funcionários</a>
+           
+
 <!-- partial -->
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>

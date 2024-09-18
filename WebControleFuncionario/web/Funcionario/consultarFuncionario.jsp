@@ -1,27 +1,27 @@
 <%-- 
-    Document   : consultarDepartamento
+    Document   : consultarFuncionario
     Created on : 12 de set. de 2024, 08:24:24
     Author     : pedro_miranda-neto
 --%>
 
-<%@page import="controlefuncionario.Departamento"%>
+<%@page import="controlefuncionario.Funcionario"%>
 <%
     //crio a variavel id com o valor do input
     int id = Integer.parseInt(request.getParameter("idConsulta"));
     //istancio a classe e dou um set no id
-    Departamento dep = new Departamento();
-    dep.setIdDepto(id);
+    Funcionario fun = new Funcionario();
+    fun.setIdFunc(id);
 
     //armazeno a consulta em uma variavel
-    Departamento consulta = dep.consultaDepto();
+    Funcionario consulta = fun.consultaFuncionario();
 
     if (consulta != null) {
     
     } else {
 %>
 <script type="text/javascript">
-    alert('ID do departamento é nulo');
-    window.location.href = 'telaLerDepartamento.html';
+    alert('ID do Funcionario é nulo');
+    window.location.href = 'telaLerFuncionario.html';
 </script>
 <%}%>
         
@@ -30,27 +30,27 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Bootstrap 4 sidebad collapsable sidebar responsive menu</title>
+  <title>Ler Funcionario</title>
   <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="../estilos/style.css">
   
 </head>
 <body>
     <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="telaCriarDepartamento.html">Criar</a>
+            <a class="nav-link" href="telaCriarFuncionario.html">Criar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="telaAlterarDepartamento.html">Alterar</a>
+            <a class="nav-link" href="telaAlterarFuncionario.html">Alterar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="telaExcluirDepartamento.html">Excluir</a>
+            <a class="nav-link" href="telaExcluirFuncionario.html">Excluir</a>
           </li>
         </ul>
-    <h2>Consultar Departamento</h2>
-     <form action="consultarDepartamento.jsp">
+    <h2>Consultar Funcionario</h2>
+     <form action="consultarFuncionario.jsp">
         <label for="idConsulta">Consultar por ID:</label>
-        <input type="number" id="idConsulta" name="idConsulta" placeholder="Digite o ID do Departamento">
+        <input type="number" id="idConsulta" name="idConsulta" placeholder="Digite o ID do Funcionario">
 
         <input type="submit" value="Consultar">
     </form>
@@ -62,26 +62,30 @@
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
+                <th>ID do Funcionario</th>
+                <th>Salário</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><%= id %></td>
-                <td><%= consulta.getDescDepto()%></td>
+                <td><%= fun.getIdFunc()%></td>
+                <td><%= fun.getNomeFunc()%></td>
+                <td><%= fun.getIdDepto()%></td>
+                <td><%= fun.getSalHora()%></td>
             </tr>
         </tbody>
     </table>
 <% } else if (consulta == null) { %>
     <script type="text/javascript">
-        alert('Departamento não existe');
+        alert('Funcionario não existe');
         window.location.href = 'menu.jsp';
     </script>
 <% } %>
  
 
-    <!-- Formulário para listar todos os departamentos -->
-    <h2>Listar Todos os Departamentos</h2>
-    <form action="listarDepartamento.jsp">
+    <!-- Formulário para listar todos os funcionarios -->
+    <h2>Listar Todos os Funcionarios</h2>
+    <form action="listarFuncionario.jsp">
         <input type="submit" value="Listar">
     </form>
             
