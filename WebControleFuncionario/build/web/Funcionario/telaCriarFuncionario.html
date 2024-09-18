@@ -13,17 +13,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     </head>
     <body>
         <ul class="nav" id="navCRUD">
-            <li class="nav-item">
+        <li class="nav-item">
             <a class="nav-link" href="../menu.jsp">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="telaLerDepartamento.html">Ler</a>
+            <a class="nav-link" href="telaLerFuncionario.html">Ler</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="telaAlterarDepartamento.html">Alterar</a>
+            <a class="nav-link" href="telaAlterarFuncionario.html">Alterar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="telaExcluirDepartamento.html">Excluir</a>
+            <a class="nav-link" href="telaExcluirFuncionario.html">Excluir</a>
           </li>
         </ul>
         <br>
@@ -33,9 +33,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     <form action="criarFuncionario.jsp" >
         <label for="nomeDepartamento">Nome do Funcionario</label>
         <input type="text" id="nome" name="nome" required>
-        <label for="nomeDepartamento">id do Departamento:</label>
+        <label for="idDepartamento">id do Departamento:</label>
         <input type="text" id="idDepartamento" name="idDepartamento" required>
-        <label for="nomeDepartamento">Salario do Funcionario (formato 9999.99):</label>
+        <label for="salario">Salario do Funcionario (formato 9999.99):</label>
         <input type="text" id="salario" name="salario" required>
         
         <input type="submit" value="Cadastrar">

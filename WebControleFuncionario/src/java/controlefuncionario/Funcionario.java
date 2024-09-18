@@ -44,6 +44,7 @@ public class Funcionario {
 				stm.setString(1, this.getNomeFunc());
 				stm.setInt   (2, this.getIdDepto());
 				stm.setDouble(3, this.getSalHora());
+                                stm.setInt(4, this.getIdFunc());
 				stm.execute();
 			} catch (SQLException e) {
 				System.out.println("Erro na inclusão do departamento");
