@@ -1,30 +1,30 @@
 <%-- 
-    Document   : DeletarDepartamento
+    Document   : DeletarFuncionario
     Created on : 12 de set. de 2024, 07:48:37
     Author     : pedro_miranda-neto
 --%>
 
-<%@page import="controlefuncionario.Departamento"%>
+<%@page import="controlefuncionario.Funcionario"%>
 <%
     //crio a variavel com o valor do input
     int id = Integer.parseInt(request.getParameter("idExcluir"));
 
     //istancio a classe e dou um set
     
-    Departamento dep = new Departamento();
-    dep.setIdDepto(id);
+    Funcionario fun = new Funcionario();
+    fun.setIdDepto(id);
 
-    if (dep.excluirDepartamento()) {
+    if (fun.excluirFuncionario()) {
 %>
 <script type="text/javascript">
-    alert('departamento deletado');
-    window.location.href = 'telaExcluirDepartamento.html'; // redireciona para a página de cadastro
+    alert('Funcionario deletado');
+    window.location.href = 'telaExcluirFuncionario.html'; // redireciona para a página de cadastro
 </script>
 <%
 } else {
 %>
 <script type="text/javascript">
-    alert('Erro ao deletar o departamento');
-    window.location.href = 'telaExcluirDepartamento.html'; // redireciona para a página de cadastro
+    alert('Erro ao deletar o Funcionario');
+    window.location.href = 'telaExcluirFuncionario.html'; // redireciona para a página de cadastro
 </script>
 <%}%>

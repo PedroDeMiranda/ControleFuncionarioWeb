@@ -96,7 +96,20 @@ public class Funcionario {
 			}
 			return fun;
 		}
-		
+                
+        public boolean excluirFuncionario() throws ClassNotFoundException {
+        String sql = "DELETE FROM funcionario WHERE idFunc = ?;";
+        Connection con = Conexao.conectar();
+        try {
+            PreparedStatement stm = con.prepareStatement(sql);
+            stm.setInt(1, this.getIdFunc());
+            int rowsAffected = stm.executeUpdate(); // Verifica se houve exclusão
+            return rowsAffected > 0;
+        } catch (SQLException e) {
+            System.out.println("Erro na exclusão do funcionário");
+            return false;
+        }
+        }
 	// area de getters e setters
 	public int getIdFunc() {
 		return idFunc;

@@ -5,11 +5,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Excluir Funcionario</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="../estilos/style.css">
     </head>
     <body>
-        <div>TODO write content</div>
+          
+        <ul class="nav" id="navCRUD">
+            <li class="nav-item" >
+            <a class="nav-link" href="../menu.jsp">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="telaLerFuncionario.html">Ler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="telaAlterarFuncionario.html">Alterar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="telaCriarFuncionario.html">Criar</a>
+          </li>
+        </ul>
+         <div class="content-container">
+        <h2>Excluir Funcionario</h2>
+    <form action="DeletarFuncionario.jsp">
+        <label for="idExcluir">ID do Funcionario:</label>
+        <input type="number" id="idExcluir" name="idExcluir" required>
+
+        <button type="submit">Excluir</button>
+    </form>
+         </div>
     </body>
 </html>

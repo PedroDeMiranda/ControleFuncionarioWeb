@@ -69,9 +69,9 @@
         <tbody>
             <tr>
                 <td><%= fun.getIdFunc()%></td>
-                <td><%= fun.getNomeFunc()%></td>
-                <td><%= fun.getIdDepto()%></td>
-                <td><%= fun.getSalHora()%></td>
+                <td><%= consulta.getNomeFunc()%></td>
+                <td><%= consulta.getIdDepto()%></td>
+                <td><%= consulta.getSalHora()%></td>
             </tr>
         </tbody>
     </table>
@@ -88,7 +88,7 @@
     <form action="listarFuncionario.jsp">
         <input type="submit" value="Listar">
     </form>
-            
+    
     
         </div>
     </div> <!-- /#page-content-wrapper -->
