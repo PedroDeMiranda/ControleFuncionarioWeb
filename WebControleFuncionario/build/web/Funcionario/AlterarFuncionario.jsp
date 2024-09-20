@@ -7,10 +7,10 @@
 <%@page import="controlefuncionario.Funcionario"%>
 <%
    //crio as variavies com o valor do input
-    int id = Integer.parseInt(request.getParameter("idAlterar"));
-    String nomeNovo =  request.getParameter("nomeNovo");
-    int idDep = Integer.parseInt(request.getParameter("idDepartamento"));
-    double salHora = Double.parseDouble(request.getParameter("salario")); 
+    int     id       = Integer.parseInt(request.getParameter("idAlterar"));
+    String  nomeNovo = request.getParameter("nomeNovo");
+    int     idDep    = Integer.parseInt(request.getParameter("idDepartamento"));
+    double  salHora  = Double.parseDouble(request.getParameter("salario")); 
    
     //istancio a classe e dou um set
     Funcionario fun = new Funcionario();

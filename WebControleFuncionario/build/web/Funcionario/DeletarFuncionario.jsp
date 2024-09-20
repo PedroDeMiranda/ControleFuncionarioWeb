@@ -12,8 +12,8 @@
     //istancio a classe e dou um set
     
     Funcionario fun = new Funcionario();
-    fun.setIdDepto(id);
-
+    fun.setIdFunc(id);
+    
     if (fun.excluirFuncionario()) {
 %>
 <script type="text/javascript">
